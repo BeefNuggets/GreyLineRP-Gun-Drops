@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GreyLineRP — Faction Drops</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="app">
+
+  <!-- ══ SIDEBAR ══ -->
+  <aside class="sidebar">
+
+    <div class="sidebar-logo">
+      <!--
+        ════════════════════════════════════════
+        LOGO IMAGE — change the src path below
+        to point to your image file, e.g.:
+          src="assets/logo.png"
+          src="assets/gc-logo.jpg"
+        ════════════════════════════════════════
+      -->
+      <div class="logo-img-wrap">
+        <img
+          id="logoImg"
+          class="logo-img"
+          src="assets/items/GreyLineLogo.png"
+          alt=""
+          onerror="this.style.display='none'; document.getElementById('logoFallback').style.display='flex';"
+        >
+        <div class="logo-fallback" id="logoFallback">
+          <span class="logo-gc"></span>
+        </div>
+      </div>
+      <div class="logo-text">
+        <span class="logo-main">GreyLineRP</span>
+        <span class="logo-sub">Faction Drops</span>
+      </div>
+    </div>
+
+    <div class="sidebar-divider"></div>
+
+    <nav class="tier-nav">
+      <button class="navbtn active" data-filter="t0">
+        <span class="tier-tag t0-tag">T0</span>
+        <span class="tier-label">Probation</span>
+      </button>
+      <button class="navbtn" data-filter="t05">
+        <span class="tier-tag t05-tag">T0.5</span>
+        <span class="tier-label">Rising</span>
+      </button>
+      <button class="navbtn" data-filter="t1">
+        <span class="tier-tag t1-tag">T1</span>
+        <span class="tier-label">Pistols</span>
+      </button>
+      <button class="navbtn" data-filter="t15">
+        <span class="tier-tag t15-tag">T1.5</span>
+        <span class="tier-label">High Pistols</span>
+      </button>
+      <button class="navbtn" data-filter="t2">
+        <span class="tier-tag t2-tag">T2</span>
+        <span class="tier-label">Pistols &amp; Rifles</span>
+      </button>
+      <button class="navbtn" data-filter="t25">
+        <span class="tier-tag t25-tag">T2.5</span>
+        <span class="tier-label">Switches &amp; Rifles</span>
+      </button>
+    </nav>
+
+    <div class="sidebar-divider"></div>
+
+    <div class="action-btns">
+      <button class="spin-btn" id="spinBtn">
+        <svg class="spin-btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/>
+          <path d="M3 3v5h5"/>
+        </svg>
+        SPIN DROP
+      </button>
+    </div>
+
+    <div class="sidebar-footer">
+      <div class="fm-badge">
+        <span class="fm-dot"></span>
+        FM USE ONLY
+        <span class="fm-dot"></span>
+      </div>
+    </div>
+
+  </aside>
+
+  <!-- ══ MAIN ══ -->
+  <main class="main">
+
+    <header class="page-header">
+      <div class="header-left">
+        <div class="tier-eyebrow" id="tierEyebrow">TIER 0</div>
+        <h1 class="title" id="mainTitle">Probation</h1>
+        <p class="tier-desc" id="tierDesc">Knives and bats only. No firearms authorized.</p>
+      </div>
+      <div class="header-right">
+        <div class="drops-display">
+          <div class="drops-number" id="dropCount">2</div>
+          <div class="drops-meta">
+            <div class="drops-label">DROPS</div>
+            <div class="drops-sub">PER SPIN</div>
+          </div>
+        </div>
+        <div class="tier-pill" id="tierPill"><span id="tierPillText">T0</span></div>
+      </div>
+    </header>
+
+    <div class="header-rule">
+      <div class="rule-line"></div>
+      <div class="rule-node"></div>
+      <div class="rule-line"></div>
+    </div>
+
+    <section class="grid" id="grid"></section>
+
+  </main>
+</div>
+
+<!-- ══════════ SPINNER OVERLAY ══════════ -->
+<div class="spinner-overlay" id="spinnerOverlay">
+  <div class="spinner-scene">
+
+    <div class="spin-meta-row">
+      <div class="spinner-tier-label" id="spinnerTierLabel">T0 — PROBATION</div>
+      <div class="spin-counter">
+        DROP <span id="spinCurrentNum">1</span> of <span id="spinTotalNum">2</span>
+      </div>
+    </div>
+
+    <div class="spin-progress-bar">
+      <div class="spin-progress-fill" id="spinProgressFill"></div>
+    </div>
+
+    <div class="reel-frame">
+      <div class="reel-fade reel-fade-l"></div>
+      <div class="reel-fade reel-fade-r"></div>
+      <div class="reel-marker">
+        <div class="reel-marker-tri top"></div>
+        <div class="reel-marker-bar"></div>
+        <div class="reel-marker-tri bot"></div>
+      </div>
+      <div class="reel" id="reel"></div>
+    </div>
+
+    <div class="spin-status" id="spinStatus">
+      <span class="spin-dot"></span>
+      <span id="spinStatusText">Spinning…</span>
+    </div>
+
+    <div class="won-strip" id="wonStrip"></div>
+
+  </div>
+</div>
+
+<!-- ══════════ FINAL MODAL ══════════ -->
+<div class="final-overlay" id="finalOverlay">
+  <div class="final-modal">
+    <div class="final-shimmer"></div>
+    <div class="final-eyebrow" id="finalEyebrow">T0 — PROBATION</div>
+    <div class="final-title">YOUR DROPS</div>
+    <div class="final-rule"></div>
+    <div class="final-items" id="finalItems"></div>
+    <button class="final-confirm" id="finalConfirm">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
+      CONFIRM DROPS
+    </button>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
