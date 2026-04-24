@@ -9,7 +9,7 @@ const TIERS = {
     eyebrow:"TIER 0",
     title:  "Probation",
     desc:   "Knives and bats only.",
-    drops:  2,
+    drops:  1,
   },
   t05: {
     label:  "T0.5 — RISING",
@@ -23,7 +23,7 @@ const TIERS = {
     eyebrow:"TIER 1",
     title:  "Tier 1",
     desc:   "Low quality pistols. 1–2 mid-quality allowed.",
-    drops:  2,
+    drops:  3,
   },
   t15: {
     label:  "T1.5 — HIGH PISTOLS",
