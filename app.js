@@ -53,52 +53,52 @@ const TIERS = {
 ══════════════════════════════════════ */
 const ITEMS = [
   // T0 — Melee only
-  { tier:"t0",  name:"Machete",            img:"assets/items/T0/Machete.png" },
-  { tier:"t0",  name:"ChefKnife",  img:"assets/items/T0/ChefKnife.png" },
-  { tier:"t0",  name:"Hammer",   img:"assets/items/T0/Hammer.png" },
-  { tier:"t0",  name:"SwitchBlade",        img:"assets/items/T0/SwitchBlade.png" },
+  { tier:"t0",  name:"Machete",            img:"T0/Machete.png" },
+  { tier:"t0",  name:"ChefKnife",  img:"T0/ChefKnife.png" },
+  { tier:"t0",  name:"Hammer",   img:"T0/Hammer.png" },
+  { tier:"t0",  name:"SwitchBlade",        img:"T0/SwitchBlade.png" },
 
   // T0.5 — Melee + basic pistols (edit as needed)
-  { tier:"t05", name:"M1911",            img:"assets/items/T0.5/M1911.png" },
-  { tier:"t05", name:"WP22",        img:"assets/items/T0.5/WP22.png" },
-  { tier:"t05", name:"HiPointC9",        img:"assets/items/T0.5/HiPointC9.png" },
-  { tier:"t05", name:"S&W38",        img:"assets/items/T0.5/S&W38.png" },
+  { tier:"t05", name:"M1911",            img:"T0.5/M1911.png" },
+  { tier:"t05", name:"WP22",        img:"T0.5/WP22.png" },
+  { tier:"t05", name:"HiPointC9",        img:"T0.5/HiPointC9.png" },
+  { tier:"t05", name:"S&W38",        img:"T0.5/S&W38.png" },
 
   // T1 — Low/Mid Pistols
-  { tier:"t1",  name:"Glock17",    img:"assets/items/T1/Glock17.png" },
-  { tier:"t1",  name:"XDCompact",    img:"assets/items/T1/XDCompact.png" },
-  { tier:"t1",  name:"G2C",     img:"assets/items/T1/G2C.png" },
-  { tier:"t1",  name:"Glock17S",  img:"assets/items/T1/Glock17S.png" },
-  { tier:"t1",  name:"USP45",       img:"assets/items/T1/USP45.png" },
-  { tier:"t1",  name:"P320",       img:"assets/items/T1/P320.png" },
-  { tier:"t1",  name:"G27Ext",        img:"assets/items/T1/G27Ext.png" },
-  { tier:"t1",  name:"G26",        img:"assets/items/T1/G26.png" },
+  { tier:"t1",  name:"Glock17",    img:"T1/Glock17.png" },
+  { tier:"t1",  name:"XDCompact",    img:"T1/XDCompact.png" },
+  { tier:"t1",  name:"G2C",     img:"T1/G2C.png" },
+  { tier:"t1",  name:"Glock17S",  img:"T1/Glock17S.png" },
+  { tier:"t1",  name:"USP45",       img:"T1/USP45.png" },
+  { tier:"t1",  name:"P320",       img:"T1/P320.png" },
+  { tier:"t1",  name:"G27Ext",        img:"T1/G27Ext.png" },
+  { tier:"t1",  name:"G26",        img:"T1/G26.png" },
   
   // T1.5 — High Pistols + Mid Switches
-  { tier:"t15", name:"AR15",         img:"assets/items/T1.5/AR15.png" },
-  { tier:"t15", name:"Glock17Switch", img:"assets/items/T1.5/Glock17Switch.png" },
-  { tier:"t15", name:"FN5.7",img:"assets/items/T1.5/FN5.7.png" },
-  { tier:"t15", name:"P320RMR",img:"assets/items/T1.5/P320RMR.png" },
-  { tier:"t15", name:"P80Drum", img:"assets/items/T1.5/P80Drum.png" },
-  { tier:"t15", name:"P220",      img:"assets/items/T1.5/P220.png" },
-  { tier:"t15", name:"HKMK23", img:"assets/items/T1.5/HKMK23.png" },
+  { tier:"t15", name:"AR15",         img:"T1.5/AR15.png" },
+  { tier:"t15", name:"Glock17Switch", img:"T1.5/Glock17Switch.png" },
+  { tier:"t15", name:"FN5.7",img:"T1.5/FN5.7.png" },
+  { tier:"t15", name:"P320RMR",img:"T1.5/P320RMR.png" },
+  { tier:"t15", name:"P80Drum", img:"T1.5/P80Drum.png" },
+  { tier:"t15", name:"P220",      img:"T1.5/P220.png" },
+  { tier:"t15", name:"HKMK23", img:"T1.5/HKMK23.png" },
 
   // T2 — High Pistols + Switches + ARs + Dracos
-  { tier:"t2",  name:"FullyARP",          img:"assets/items/T2/FullyARP.png" },
-  { tier:"t2",  name:"Deagle",         img:"assets/items/T2/Deagle.png" },
-  { tier:"t2",  name:"Glock30Switch",          img:"assets/items/T2/Glock30Switch.png" },
-  { tier:"t2",  name:"Draco",  img:"assets/items/T2/Draco.png" },
-  { tier:"t2",  name:"ClearARP",  img:"assets/items/T2/ClearARP.png" },
-  { tier:"t2",  name:"Tec-9",       img:"assets/items/T2/Tec-9.png" },
+  { tier:"t2",  name:"FullyARP",          img:"T2/FullyARP.png" },
+  { tier:"t2",  name:"Deagle",         img:"T2/Deagle.png" },
+  { tier:"t2",  name:"Glock30Switch",          img:"T2/Glock30Switch.png" },
+  { tier:"t2",  name:"Draco",  img:"T2/Draco.png" },
+  { tier:"t2",  name:"ClearARP",  img:"T2/ClearARP.png" },
+  { tier:"t2",  name:"Tec-9",       img:"T2/Tec-9.png" },
 
   // T2.5 — High Quality Switches & Rifles
-  { tier:"t25", name:"Cruiser",         img:"assets/items/T2.5/Cruiser.png" },
-  { tier:"t25", name:"Sawed-Off",       img:"assets/items/T2.5/Sawed-Off.png" },
-  { tier:"t25", name:"Draco60Rnd",       img:"assets/items/T2.5/Draco60Rnd.png" },
-  { tier:"t25", name:"Mac10Sup",     img:"assets/items/T2.5/Mac10Sup.png" },
-  { tier:"t25", name:"Mp5K",     img:"assets/items/T2.5/Mp5K.png" },
-  { tier:"t25", name:"Glock19Switch",           img:"assets/items/T2.5/Glock19Switch.png" },
-  { tier:"t25", name:"MicroUzi",           img:"assets/items/T2.5/MicroUzi.png" },
+  { tier:"t25", name:"Cruiser",         img:"T2.5/Cruiser.png" },
+  { tier:"t25", name:"Sawed-Off",       img:"T2.5/Sawed-Off.png" },
+  { tier:"t25", name:"Draco60Rnd",       img:"T2.5/Draco60Rnd.png" },
+  { tier:"t25", name:"Mac10Sup",     img:"T2.5/Mac10Sup.png" },
+  { tier:"t25", name:"Mp5K",     img:"T2.5/Mp5K.png" },
+  { tier:"t25", name:"Glock19Switch",           img:"T2.5/Glock19Switch.png" },
+  { tier:"t25", name:"MicroUzi",           img:"T2.5/MicroUzi.png" },
 ];
 
 /* ══════════════════════════════════════
